@@ -1,10 +1,11 @@
-body { background-image: url('backround%20pic%20of%20coding.jpg');
-    background-color: #cccccc;
-  padding-top: 20px;
+body {  background-image: url('https://desivyprogramming.files.wordpress.com/2014/07/binary-code2.jpg');
+        background-color: #cccccc;
+        padding-top: 20px;
+        background-size: cover;
 }
 
 p,h1,h2,h3,h4 {
-    color: white;
+    color: dimgrey;
 }
 
 .footer {
