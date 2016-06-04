@@ -125,7 +125,8 @@ background-size: 100%;
 }
 
 nav ul{
-  text-align:center; padding-left: 1em;
+  text-align:center; 
+    padding-left: 1em;
     padding-right: 1em;
 
 }
@@ -136,16 +137,15 @@ nav ul li{
 
 nav ul li a{
   font-family: 'Indie Flower', cursive;
-  color: rgba(0, 35, 34, 0.6);
-  font-size: 15px;
-  text-transform:uppercase;
+  color: rgba(0, 35, 34, 1);
+  font-size: 20px;
   text-decoration:none;
     font-weight: 800;
    
 }
 li a{
   background:rgba(255, 255, 255, 0.3);
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0;1), inset  0 0 1px rgba(225, 255, 255, 0.8);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0), inset  0 0 1px rgba(225, 255, 255, 0.8);
   width:120px;
   height:120px;
   line-height:115px;
@@ -156,5 +156,5 @@ li a{
 li a:hover{
   transition-duration: 300ms;
 
-  background: rgba(0, 120, 140, 0.6);
+/*  background: rgba(0, 120, 140, 0.6);*/
 }
