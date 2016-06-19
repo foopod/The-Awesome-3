@@ -97,3 +97,35 @@ Lastly we don't want the form taking up the whole width of the page. Lets fix th
 
 Open your `style.css` file to add some custom styling.
 
+Add a new section at the bottom for the `<form>` tag.
+
+```css
+form{
+  width: 50%;
+}
+```
+
+That is better right? Maybe we should centre it though?
+
+We can make it automatically scale the margins to put it in the middle. To do that just add `margin: auto;` to your css file like below.
+
+```css
+form{
+  width: 50%;
+  margin: auto;
+}
+```
+
+Much Better!
+
+Next we are going to make it work :D
+
+#Step Four : Hooking the form into a web service
+
+[Formspree](https://formspree.io/) is a great open source tool that will send an email to you when someone submits your form to their web service.
+
+1. We are going to add an `action` to the form so the form knows to send the information to the Formspree web service.
+2. Then we will add some `name` attributes to the fields so that those fields come through in the emails from formspree.
+3. Lastly we can add some custom attributes to do some cool things like cc in other email addresses, so that the whole team will get the email or maybe add a thank you page that a user would get redirected to.
+
+#... This is as far as I got though
