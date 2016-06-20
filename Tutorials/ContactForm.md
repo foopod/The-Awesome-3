@@ -128,4 +128,56 @@ Next we are going to make it work :D
 2. Then we will add some `name` attributes to the fields so that those fields come through in the emails from formspree.
 3. Lastly we can add some custom attributes to do some cool things like cc in other email addresses, so that the whole team will get the email or maybe add a thank you page that a user would get redirected to.
 
-#... This is as far as I got though
+###Step Four Part 1 : Form Action
+
+The `action` attribute on a form determines where the data from the form is sent when the user clicks submit.
+
+To do this add `action="https://formspree.io/your@email.com"` to your `<form...` opening tag.
+
+So that it looks like this ...
+
+```html
+<form action="https://formspree.io/your@email.com">
+```
+
+Use one of your emails to start with and I will show you how to add other emails in Part 3.
+
+### Step Four Part 2 : Name Attributes
+
+Formspree will only be able to detect the fields that you have added `name` attributes to. So lets go through now and add them so we see them coming through in the emails.
+
+Go through and add names you will be useful to you.
+
+For example I think adding `name="Email"` to the email field would be quite useful.
+
+eg. `<input type="text" class="form-control" placeholder="Email" name="Email">`
+
+At this stage you can test the form to see if you get an email (make sure that you have used an email address you have access too right now). Try to submit the form and you will get directed to a page telling you to verify your email address, just follow their instructions and you should be fine.
+
+At this point you should be all set XD
+
+### Step Four Part 3 : Adding Extras
+
+First lets add some more email addresses so that we all get them.
+
+This can be done by adding another field to the form, only this field will be hidden so the user can't see it, but the information will still be passed to Formspree.
+
+The example below will include the two email addressses another@email.com and yetanother@email.com. This works by cc'ing them in the email sent by Formspree.
+
+```html
+<input type="hidden" name="_cc" value="another@email.com,yetanother@email.com" />
+```
+
+You may also notice that when the user submits the form they will get sent to the Formspree website. We probably don't want that. So lets add some more hidden information to tell Formspree where to direct the user after they have submitted the form.
+
+```html
+<input type="hidden" name="_next" value="http://codegenie.tech" />
+```
+
+In the example above I have used `http://codegenie.tech`, but you could make your own Thank You page and use that instead if you felt so inclined.
+
+One last thing you can do is tell Formspree what you want the subject of the email to be...
+
+```html
+<input type="hidden" name="_subject" value="CodeGenie User contacted you!" />
+```
