@@ -1,5 +1,11 @@
 #Creating a Contact Form
 
+Today we will be making something like this....
+
+![Contact Form](http://i.imgur.com/cWmD8dV.jpg "Contact Form")
+
+When someone fills it out you will get sent an email with the information they put in the form.
+
 For this we will be using a few new HTML Tags.
 
 `<form>` - to define a form in a web page
