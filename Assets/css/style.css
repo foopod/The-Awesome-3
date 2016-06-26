@@ -31,7 +31,7 @@ img.bg {
 }
 
 p,h1,h2,h3,h4 {
-    color: dimgrey;
+    color: lightgoldenrodyellow;
 }
 
 .footer {
@@ -157,4 +157,9 @@ li a:hover{
   transition-duration: 300ms;
 
 /*  background: rgba(0, 120, 140, 0.6);*/
+}
+
+form{
+    width: 50%;
+    margin: auto;
 }

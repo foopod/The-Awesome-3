@@ -61,23 +61,26 @@
       <div class="jumbotron">
         <h1 class="page-title">Contact Us</h1>
         <p class="lead"></p>
-          <form>
+          <form> 
+              
+              <form action="https://formspree.io/amelia.j.lockley@gmail.com">
             <div class="row">
-                <div class="col-lg-16"><input type = "text" class = "form-control" placeholder = "Name"></div>
-                <div class="col-lg-16"><input type = "text" class = "form-control" placeholder = "Email"></div>
-            </div>
+                <div class="col-lg-6"><input type="text" class="form-control" placeholder="Name"></div>
+                <div class="col-lg-6"><input type="text" class="form-control" placeholder="Email"></div>
+          </div>
           <br>
           <div class="row">
               <div class = "col-lg-12">
-              <textarea rows="4" placeholder="Message" class = "form-control"></textarea>
-
-              </div>
-                
+              <textarea placeholder="Message" rows="4" class="form-control"></textarea>
+              </div>   
           </div>
           <br>
-          <input type="submit" class = "btn" value="Send"> 
-          </form>
-      </div>
+            <input type="hidden" name="_cc" value="another@email.com,yetanother@email.com" />
+            <input type="hidden" name="_next" value="http://codegenie.tech" />
+            <input type="hidden" name="_subject" value="Codegenie User contacted you!" />
+            <input type="submit" value="Send" class = "btn"> 
+          <form>
+        
 
 
 
