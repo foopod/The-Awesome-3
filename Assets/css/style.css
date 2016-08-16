@@ -165,3 +165,17 @@ form{
 }
 
 
+.bio{
+    max-width: 50%;
+    display: inline; 
+}
+
+.bio p, h3{
+    color:lightcyan;
+    font-size: 130%
+}
+
+.bio h3{
+    font-size: 220%;
+     font-family: 'Indie Flower', cursive;
+}
