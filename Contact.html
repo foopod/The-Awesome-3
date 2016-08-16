@@ -10,10 +10,6 @@
     <link rel="icon" href="../../favicon.ico">
 
     <title>CodeGenie</title>
-
-   <!-- Latest compiled and minif   ied CSS -->
-<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
-
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
@@ -22,20 +18,23 @@
       <link href="Assets/css/bootstrap.css" rel="stylesheet">
       <link href="Assets/css/style.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
     
   <img src="Assets/images/bg.jpg" class="bg"/>
 
   <body>
+      <!-- Google Tag Manager -->
+            <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PSRXPT"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-PSRXPT');</script>
+        <!-- End Google Tag Manager -->
+      
 <!--      <div class="background-image"></div>-->
 <!--      <img src="Assets/images/bg.jpg" class="bg"/>-->
     <div class="container">
@@ -64,19 +63,19 @@
               
               <form action="https://formspree.io/amelia.j.lockley+codegenie@gmail.com" method="POST">
             <div class="row">
-                <div class="col-lg-6"><input type="text" class="form-control" placeholder="Name" name="Name"></div>
-                <div class="col-lg-6"><input type="text" class="form-control" placeholder="Email" name="Email"></div>
+                <div class="col-lg-6"><input type="text" class="form-control"  required placeholder="Name" name="Name"></div>
+                <div class="col-lg-6"><input type="text" class="form-control"  required placeholder="Email" name="Email"></div>
           </div>
           <br>
           <div class="row">
               <div class = "col-lg-12">
-              <textarea placeholder="Message" rows="4" class="form-control" name="Message"></textarea>
+              <textarea placeholder="Message" rows="4" class="form-control" name="Message" required></textarea>
               </div>   
           </div>
           <br>
-            <input type="hidden" name="_cc" value="jono@jono.website" />
+            <input type="hidden" name="_cc" value="jono@jono.website"/>
             <input type="hidden" name="_next" value="http://codegenie.tech" />
-            <input type="hidden" name="_subject" value="Codegenie User contacted you!" />
+            <input type="hidden" name="_subject" value="Codegenie User contacted you!"/>
             <input type="submit" value="Send" class = "btn btn-default"> 
           <form>
         
