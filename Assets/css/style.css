@@ -128,11 +128,13 @@ nav ul{
   text-align:center; 
     padding-left: 1em;
     padding-right: 1em;
-
+box-sizing: border-box;
 }
 nav ul li{
   display: inline-block;  
   padding:1em;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 nav ul li a{
@@ -141,7 +143,7 @@ nav ul li a{
   font-size: 20px;
   text-decoration:none;
     font-weight: 800;
-   
+   box-sizing: border-box;
 }
 li a{
   background:rgba(255, 255, 255, 0.3);
@@ -155,7 +157,7 @@ li a{
 
 li a:hover{
   transition-duration: 300ms;
-
+    
 /*  background: rgba(0, 120, 140, 0.6);*/
 }
 
